@@ -1,4 +1,4 @@
-name: feature_template
+name: pipeline_template
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
@@ -26,8 +26,8 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
-  featureName:
+  projectName:
     type: string
-    description: Your feature name
-    default: template
-    prompt: What is your feature name?
+    description: Your project name
+    default: example
+    prompt: What is your project name?
