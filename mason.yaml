@@ -8,6 +8,9 @@ bricks:
   pipeline_template:
     path:
       bricks/pipeline_template
+  feature_template_android:
+    path:
+      bricks/feature_template_android
   # Bricks can be imported via version constraint from a registry.
   # Uncomment the following line to import the "hello" brick from BrickHub.
   # hello: 0.1.0+1
