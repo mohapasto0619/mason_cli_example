@@ -1,4 +1,4 @@
-package com.orange.archhelloworld.feature{{featureName.lowerCase()}}.domain.usecase
+package com.orange.{{projectName.lowerCase()}}.feature{{featureName.lowerCase()}}.domain.usecase
 
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

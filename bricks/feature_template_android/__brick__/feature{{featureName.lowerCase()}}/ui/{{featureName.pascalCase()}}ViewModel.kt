@@ -1,8 +1,8 @@
-package com.orange.archhelloworld.featureplaceholder.ui
+package com.orange.{{projectName.lowerCase()}}.featureplaceholder.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.orange.archhelloworld.feature{{featureName.lowerCase()}}.domain.usecase.I{{featureName.pascalCase()}}UseCase
+import com.orange.{{projectName.lowerCase()}}.feature{{featureName.lowerCase()}}.domain.usecase.I{{featureName.pascalCase()}}UseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.flow.MutableStateFlow

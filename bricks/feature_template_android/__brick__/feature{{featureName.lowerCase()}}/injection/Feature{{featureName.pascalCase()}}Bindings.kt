@@ -1,7 +1,7 @@
-package com.orange.archhelloworld.featureplaceholder.injection
+package com.orange.{{projectName.lowerCase()}}.featureplaceholder.injection
 
-import com.orange.archhelloworld.feature{{featureName.lowerCase()}}.domain.usecase.I{{featureName.pascalCase()}}UseCase
-import com.orange.archhelloworld.feature{{featureName.lowerCase()}}.domain.usecase.{{featureName.pascalCase()}}UseCase
+import com.orange.{{projectName.lowerCase()}}.feature{{featureName.lowerCase()}}.domain.usecase.I{{featureName.pascalCase()}}UseCase
+import com.orange.{{projectName.lowerCase()}}.feature{{featureName.lowerCase()}}.domain.usecase.{{featureName.pascalCase()}}UseCase
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

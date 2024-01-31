@@ -26,6 +26,12 @@ environment:
 #  * a list of values (enums only)
 #  * an optional separator (list only)
 vars:
+  projectName:
+    type: string
+    description: Your project name
+    default: example
+    prompt: What is your project name?
+
   featureName:
     type: string
     description: Your feature name

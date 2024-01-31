@@ -1,4 +1,4 @@
-package com.orange.archhelloworld.featur{{featureName.lowerCase()}}.ui
+package com.orange.{{projectName.lowerCase()}}.feature{{featureName.lowerCase()}}.ui
 
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,9 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.orange.archhelloworld.designsystem.annotations.ThemePreviews
-import com.orange.archhelloworld.designsystem.components.ArchHelloWorldLoader
-import com.orange.archhelloworld.designsystem.theme.ArchHelloWorldTheme
+import com.orange.{{projectName.lowerCase()}}.designsystem.annotations.ThemePreviews
+import com.orange.{{projectName.lowerCase()}}.designsystem.components.{{projectName.pascalCase()}}Loader
+import com.orange.{{projectName.lowerCase()}}.designsystem.theme.{{projectName.pascalCase()}}Theme
 
 @Composable
 fun {{featureName.pascalCase()}}Screen(
@@ -32,7 +32,7 @@ fun {{featureName.pascalCase()}}Screen(
     Surface(modifier.fillMaxSize()) {
         BoxWithConstraints(contentAlignment = Alignment.Center) {
             when (uiState) {
-                is {{featureName.pascalCase()}}UiState.Loading -> ArchHelloWorldLoader()
+                is {{featureName.pascalCase()}}UiState.Loading -> MasonAndroidTestAppLoader()
                 is {{featureName.pascalCase()}}UiState.Success -> Greeting((uiState as {{featureName.pascalCase()}}UiState.Success).message)
             }
         }
@@ -49,7 +49,7 @@ fun Greeting(message: String) {
 @ThemePreviews
 @Composable
 fun DefaultPreview() {
-    ArchHelloWorldTheme {
+    MasonAndroidTestAppTheme {
         Greeting("Android")
     }
 }
